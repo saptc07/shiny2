@@ -1,0 +1,45 @@
+---
+title: "presentation"
+author: "Saptarshi"
+date: "10/29/2019"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## create user interface
+
+ shinyUI(fluidPage(
+
+     
+    titlePanel("first app design"),
+
+     
+    sidebarLayout(
+        sidebarPanel(
+            h4("creating user interface"),
+            sliderInput("slider",0,50,0)
+             
+        )
+
+
+## inputs
+
+- input 1
+- input 2
+
+
+## Slide with R Output
+
+```{r cars, echo = TRUE}
+summary(cars)
+```
+
+## reactive function
+
+ get_prod<- reactive({
+        input1+input2
+        
+        get_prod()
